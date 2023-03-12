@@ -1,10 +1,7 @@
-<!-- This is the markdown template for the final project of the Building AI course, 
-created by Reaktor Innovations and University of Helsinki. 
-Copy the template, paste it to your GitHub README and edit! -->
-
 # Predicting violent conflicts with open source data and deep learning
 
 Building AI course project
+
 
 ## Summary
 
@@ -17,18 +14,20 @@ Large-scale conflicts kill thousands of people across the globe and forces affec
 
 The challenges of preventing and mitigating to conflicts are evident when it escalates in regions and at times where it is not expected. Policymakers, humanitarian aid agencies and first responders could benefit from tools that map and monitor regions at risk of conflict and that has the capability of forecasting the probability of conflict onset.
 
-The main objective of this project is predicting the probability of violent conflicts for countries in Africa at the sub-national level, based on different open geodata (e.g. satellite images, meterological data), socio-economic statistical data (such as GDP), and past conflict history.
+The main objective of this project is predicting (forecasting) the probability of violent conflicts for countries in Africa at the sub-national level, based on different open geodata (e.g. satellite images, meterological data), socio-economic statistical data (such as GDP), and past conflict history.
 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
 Combining data driven crisis forecasting and prevention could help to prevent conflicts from escalating into violence. Even an imperfect forecasting system could have the potential to inform the placement of humanitarian aid missions, peacekeepers, or the deployment of NGO resources to prevent the outbreak of violence, which could ultimately save lives and minimize economic and political consequences.
 
-## Study area
-The study area encompasses countries of continental Africa. The prediciton of conflict probability will be at the level of individual administrative units (one level below national administrative borders).
+## Study area and observation period
+
+The study area encompasses countries of continental Africa. The prediciton of conflict probability will be at the level of individual administrative units (one level below national administrative borders). The observation period is from 2001 to 2021. This corresponds to the period when all repsonse and predictor variables are available.
+
 ![Study area](/StudyAreaAfrica_ConflictPredictionGeodata.png)
+African countries, represented as polygons in ESRI shapefile format. Source: [NaturalEarth](https://www.naturalearthdata.com/). 
+
 
 ## Data sources and AI methods
 
@@ -41,10 +40,11 @@ To assess conflicts, this project uses monthly data on armed conflict events per
 
 - **"One-sided violence"** (The deliberate use of armed force by the government of a state or by a formally organised group against civilians which results in at least 25 deaths in a year.)
 
-The conflicts data will be sused as both, predictor and response variable, respectively (because it is hypothesised that conflict histiry has an impact on future conflicts)
+The conflicts data will be used as both, predictor and response variable, respectively (because it is hypothesized that conflict history has an impact on future conflicts)
+
 
 # Predictor variables
-Eleven socio-economic variables were considered as predictor variables in this project. The data source is the [World Bank Open Data portal](https://data.worldbank.org ), where these data can be sourced from as *.csv files.
+Eleven socio-economic variables were considered as predictor variables in this project. The data source is the [World Bank Open Data portal](https://data.worldbank.org):
 
 - **arbl**:	Arable land (% of land area).
 - **wres**:	Renewable internal freshwater resources per capita (cubic meters).
@@ -58,7 +58,7 @@ Eleven socio-economic variables were considered as predictor variables in this p
 - **wwith**: Annual freshwater withdrawals, total (percentage of internal resources).
 - **ythb**: Age dependency ratio (percentage of working-age population).
 
-Additional predictor variables will be generated with Google Earth Engine. These predictor variables characterise the environmental conditions in the study area. This will be a comprehensive data base of the following variables:
+Additional predictor variables will be generated in Google Earth Engine. These predictor variables characterise the environmental conditions in the study area. This will be a comprehensive data base of the following variables:
 - **Monthly average temperature** data from ECMWF.
 - **Monthly precipitation** data from CHIRPS.
 - **Monthly precipitation anomaly** data from CHIRPS (to assess droughts).
@@ -66,31 +66,23 @@ Additional predictor variables will be generated with Google Earth Engine. These
 - **Average travel time** to larger cities (to proxy market access).
 - **Terrain characteristics** (e.g. elevation, slope).
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
 
 ## Challenges
+
 This project will not predict the exact number of fatalities or the conflict parties involved. Rather, it will predict conflict probability.
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
 
-## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on?
+## What next?
 
 Next steps currently undertalen include the preprocessing of the environmental predictor variables in Google Earth Engine and the definition of a suitable deep learning architecture (will be based on Tensorflow).
 
 
 ## Acknowledgments
 
-* Sources of inspiration:
-- Schellens, M.K., Belyazid, S., 2020. Revisiting the Contested Role of Natural Resources in Violent Conflict Risk through Machine Learning. Sustainability 12, 6574. https://doi.org/10.3390/su12166574  
-- Hegre, H., et al., 2019. ViEWS: A political violence early-warning system. Journal of Peace Research 56, 155–174. https://doi.org/10.1177/0022343319823860 
-- Muchlinski, D., Siroky, D., He, J., Kocher, M., 2016. Comparing Random Forest with Logistic Regression for Predicting Class-Imbalanced Civil War Onset Data. Political Analysis 24, 87–103. https://doi.org/10.1093/pan/mpv024 
-- Owain, E.L., Maslin, M.A., 2018. Assessing the relative contribution of economic, political and environmental factors on past conflict and the displacement of people in East Africa. Palgrave Communications 4, 47. https://doi.org/10.1057/s41599-018-0096-6 
-
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+# Sources of inspiration:
+- ViEWS - A political violence early-warning system. Source: https://doi.org/10.1177/0022343319823860 (last accessed 05 Jan 2023).
+- Schellens, M.K., Belyazid, S., 2020. Revisiting the Contested Role of Natural Resources in Violent Conflict Risk through Machine Learning. Sustainability 12, 6574. https://doi.org/10.3390/su12166574.
+- Hegre, H., et al., 2019. ViEWS: A political violence early-warning system. Journal of Peace Research 56, 155–174. https://doi.org/10.1177/0022343319823860.
+- Muchlinski, D., Siroky, D., He, J., Kocher, M., 2016. Comparing Random Forest with Logistic Regression for Predicting Class-Imbalanced Civil War Onset Data. Political Analysis 24, 87–103. https://doi.org/10.1093/pan/mpv024.
+- Owain, E.L., Maslin, M.A., 2018. Assessing the relative contribution of economic, political and environmental factors on past conflict and the displacement of people in East Africa. Palgrave Communications 4, 47. https://doi.org/10.1057/s41599-018-0096-6.
