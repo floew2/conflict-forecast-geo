@@ -73,9 +73,10 @@ This project will not predict the exact number of fatalities or the conflict par
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
 
 
-## What next?
+## What has bee achieved so far, what next?
 
-Next steps currently undertalen include the preprocessing of the environmental predictor variables in Google Earth Engine and the definition of a suitable deep learning architecture (will be based on Tensorflow).
+- All predictor and response variables have already been preprocessed. The result of this is a comprehensive set of (i) conflict-data, (ii) socio-economic data, and (iii) environmental data, summarized for each of the 847 administratibe units. Temporal data, such as precipitation, temperature, drought indices, and the conflict data, have a temporal resolution of one month (i.e., monthly data).
+- Next steps currently undertaken include the definition of a suitable deep learning architecture (will be based on Tensorflow).
 
 
 ## Acknowledgments
