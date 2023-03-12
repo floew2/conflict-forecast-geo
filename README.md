@@ -26,6 +26,9 @@ Describe the process of using the solution. In what kind situations is the solut
 
 Combining data driven crisis forecasting and prevention could help to prevent conflicts from escalating into violence. Even an imperfect forecasting system could have the potential to inform the placement of humanitarian aid missions, peacekeepers, or the deployment of NGO resources to prevent the outbreak of violence, which could ultimately save lives and minimize economic and political consequences.
 
+## Study area
+The study area encompasses countries of continental Africa. The prediciton of conflict probability will be at the level of individual administrative units (one level below national administrative borders).
+![Study area](/StudyAreaAfrica_ConflictPredictionGeodata.png)
 
 ## Data sources and AI methods
 
