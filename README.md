@@ -59,7 +59,7 @@ Eleven socio-economic variables were considered as predictor variables in this p
 - **wwith**: Annual freshwater withdrawals, total (percentage of internal resources).
 - **ythb**: Age dependency ratio (percentage of working-age population).
 
-Additional predictor variables will be generated in Google Earth Engine. These predictor variables characterise the environmental conditions in the study area. This will be a comprehensive data base of the following variables:
+Additional predictor variables will be generated in [Google Earth Engine](https://earthengine.google.com). These predictor variables characterise the environmental conditions in the study area. This will be a comprehensive data base of the following variables:
 - **Monthly average temperature** data from ECMWF.
 - **Monthly precipitation** data from CHIRPS.
 - **Monthly precipitation anomaly** data from CHIRPS (to assess droughts).
@@ -75,8 +75,9 @@ This project will not predict the exact number of fatalities or the conflict par
 
 ## What has bee achieved so far, what next?
 
-- All predictor and response variables have already been preprocessed. The result of this is a comprehensive set of (i) conflict-data, (ii) socio-economic data, and (iii) environmental data, summarized for each of the 847 administratibe units. Temporal data, such as precipitation, temperature, drought indices, and the conflict data, have a temporal resolution of one month (i.e., monthly data).
-- Next steps currently undertaken include the definition of a suitable deep learning architecture (will be based on Tensorflow).
+- All predictor and response variables have already been preprocessed. The result of this is a comprehensive set of (i) conflict-data, (ii) socio-economic data, and (iii) environmental data, summarized for each of the 847 administratibe units. Temporal data, such as precipitation, temperature, drought indices, and the conflict data, have a temporal resolution of one month (i.e., monthly data). Data considered temporalily "invariant", such as distance to freshwater or terrain attributes, are presented as one value per administratige unit. The complete data set is available as *.csv file and "ready-to-analyse".
+- Next steps currently undertaken include the definition of a suitable deep learning architecture (this will be based on [Tensorflow](https://www.tensorflow.org)).
+- Google Earth Engine Code to create the environmental predictors will be cleaned, commented and presented in this GitHub repository soon.
 
 
 ## Acknowledgments
