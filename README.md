@@ -84,7 +84,12 @@ Next steps currently undertalen include the preprocessing of the environmental p
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
+* Sources of inspiration:
+- Schellens, M.K., Belyazid, S., 2020. Revisiting the Contested Role of Natural Resources in Violent Conflict Risk through Machine Learning. Sustainability 12, 6574. https://doi.org/10.3390/su12166574  
+- Hegre, H., et al., 2019. ViEWS: A political violence early-warning system. Journal of Peace Research 56, 155–174. https://doi.org/10.1177/0022343319823860 
+- Muchlinski, D., Siroky, D., He, J., Kocher, M., 2016. Comparing Random Forest with Logistic Regression for Predicting Class-Imbalanced Civil War Onset Data. Political Analysis 24, 87–103. https://doi.org/10.1093/pan/mpv024 
+- Owain, E.L., Maslin, M.A., 2018. Assessing the relative contribution of economic, political and environmental factors on past conflict and the displacement of people in East Africa. Palgrave Communications 4, 47. https://doi.org/10.1057/s41599-018-0096-6 
+
 * do not use code, images, data etc. from others without permission
 * when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
   <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
