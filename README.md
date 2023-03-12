@@ -21,6 +21,7 @@ The main objective of this project is predicting (forecasting) the probability o
 
 Combining data driven crisis forecasting and prevention could help to prevent conflicts from escalating into violence. Even an imperfect forecasting system could have the potential to inform the placement of humanitarian aid missions, peacekeepers, or the deployment of NGO resources to prevent the outbreak of violence, which could ultimately save lives and minimize economic and political consequences.
 
+
 ## Study area and observation period
 
 The study area encompasses countries of continental Africa. The prediciton of conflict probability will be at the level of 847 individual administrative units (one level below national administrative borders, for example provinces). The observation period is from 2001 to 2021. This corresponds to the period when all repsonse and predictor variables are available.
@@ -31,7 +32,7 @@ African countries, represented as polygons in ESRI shapefile format. Source: [Na
 
 ## Data sources and AI methods
 
-# Response variable
+### Response variable
 To assess conflicts, this project uses monthly data on armed conflict events per country occurring between 2000 and 2020 from the [Uppsala Conflict Data Program](https://ucdp.uu.se/). Three types of conflict are reported in this data base:
 
 - **"State-based violence"** (A state-based armed conflict is a contested incompatibility that concerns government and/or territory where the use of armed force between two parties, of which at least one is the government of a state, results in at least 25 battle-related deaths in one calendar year.)
@@ -43,7 +44,7 @@ To assess conflicts, this project uses monthly data on armed conflict events per
 The conflicts data will be used as both, predictor and response variable, respectively (because it is hypothesized that conflict history has an impact on future conflicts)
 
 
-# Predictor variables
+### Predictor variables
 Eleven socio-economic variables were considered as predictor variables in this project. The data source is the [World Bank Open Data portal](https://data.worldbank.org):
 
 - **arbl**:	Arable land (% of land area).
@@ -70,7 +71,6 @@ Additional predictor variables will be generated in Google Earth Engine. These p
 ## Challenges
 
 This project will not predict the exact number of fatalities or the conflict parties involved. Rather, it will predict conflict probability.
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
 
 
 ## What has bee achieved so far, what next?
@@ -81,7 +81,7 @@ What does your project _not_ solve? Which limitations and ethical considerations
 
 ## Acknowledgments
 
-# Sources of inspiration:
+### Sources of inspiration:
 - ViEWS - A political violence early-warning system. Source: https://doi.org/10.1177/0022343319823860 (last accessed 05 Jan 2023).
 - Schellens, M.K., Belyazid, S., 2020. Revisiting the Contested Role of Natural Resources in Violent Conflict Risk through Machine Learning. Sustainability 12, 6574. https://doi.org/10.3390/su12166574.
 - Hegre, H., et al., 2019. ViEWS: A political violence early-warning system. Journal of Peace Research 56, 155–174. https://doi.org/10.1177/0022343319823860.
