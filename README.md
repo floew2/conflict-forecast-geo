@@ -41,7 +41,7 @@ To assess conflicts, this project uses monthly data on armed conflict events per
 
 - **"One-sided violence"** (The deliberate use of armed force by the government of a state or by a formally organised group against civilians which results in at least 25 deaths in a year.)
 
-The conflicts data will be used as both, predictor and response variable, respectively (because it is hypothesized that conflict history has an impact on future conflicts)
+The conflicts data will be used as both, predictor and response variable, respectively (because it is hypothesized that conflict history has an impact on future conflicts).
 
 
 ### Predictor variables
@@ -60,12 +60,14 @@ Eleven socio-economic variables were considered as predictor variables in this p
 - **ythb**: Age dependency ratio (percentage of working-age population).
 
 Additional predictor variables will be generated in [Google Earth Engine](https://earthengine.google.com). These predictor variables characterise the environmental conditions in the study area. This will be a comprehensive data base of the following variables:
-- **Monthly average temperature** data from ECMWF.
-- **Monthly precipitation** data from CHIRPS.
-- **Monthly precipitation anomaly** data from CHIRPS (to assess droughts).
-- **Eucledian distance to freshwater** sources.
+
+- **Monthly average temperature** from ECMWF.
+- **Monthly precipitation sum** from CHIRPS.
+- **Monthly precipitation anomaly** data from CHIRPS, i.e. deviaiton of recorded precipitation from long-term evareg (1970-1990) (usefull to assess droughts).
+- **Eucledian distance to freshwater** sources, based on the [JRC Global Surface Water Explorer] (https://global-surface-water.appspot.com).
 - **Average travel time** to larger cities (to proxy market access).
 - **Terrain characteristics** (e.g. elevation, slope).
+- **Population density** data from the [WorldPop](https://www.worldpop.org) project.
 
 
 ## Challenges
