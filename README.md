@@ -23,7 +23,7 @@ Combining data driven crisis forecasting and prevention could help to prevent co
 
 ## Study area and observation period
 
-The study area encompasses countries of continental Africa. The prediciton of conflict probability will be at the level of individual administrative units (one level below national administrative borders). The observation period is from 2001 to 2021. This corresponds to the period when all repsonse and predictor variables are available.
+The study area encompasses countries of continental Africa. The prediciton of conflict probability will be at the level of 847 individual administrative units (one level below national administrative borders, for example provinces). The observation period is from 2001 to 2021. This corresponds to the period when all repsonse and predictor variables are available.
 
 ![Study area](/StudyAreaAfrica_ConflictPredictionGeodata.png)
 African countries, represented as polygons in ESRI shapefile format. Source: [NaturalEarth](https://www.naturalearthdata.com/). 
