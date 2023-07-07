@@ -1,7 +1,5 @@
 # Predicting violent conflicts with open source data and deep learning
 
-Building AI course project
-
 
 ## Summary
 
